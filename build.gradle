@@ -1,0 +1,20 @@
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    jcenter()
+
+}
+
+dependencies {
+}
+
+mainClassName = "soap.test.WsClient"
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
+
